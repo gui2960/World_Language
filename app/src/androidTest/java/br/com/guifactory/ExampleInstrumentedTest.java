@@ -8,6 +8,15 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.io.IOException;
+import java.util.List;
+
+import entity.JsonObject;
+import network.ResourceService;
+import network.RetrofitClient;
+import retrofit2.Call;
+import retrofit2.Response;
+
 import static org.junit.Assert.*;
 
 /**
@@ -23,4 +32,13 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("br.com.guifactory", appContext.getPackageName());
     }
+
+    @Test
+    public void testGetDataSucessWhenResponseNotNull() throws IOException {
+        ResourceService service = RetrofitClient.getRetrofitInstance().create(ResourceService.class);
+        Call<List<JsonObject>> call = service.getWeb();
+        Response<List<JsonObject>> response = call.execute();
+        assertNotNull(response);
+    }
+
 }
