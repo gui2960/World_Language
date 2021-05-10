@@ -6,7 +6,7 @@ Solução do desafio realizada em Java e utilizando Retrofit.
 
 Aplicação que exiba uma lista dos recursos de tradução (i18n) já disponíveis em url.
 
-Se conectado a internet: Para cada elemento da lista deve ser exibido seu resource_id, updated_at e value.
+Se conectado a internet: para cada elemento da lista deve ser exibido seu resource_id, updated_at e value.
 
 Se estiver offline: informar ao cliente para tentar novamente depois e que está offline.
 
