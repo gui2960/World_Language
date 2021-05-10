@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<JsonObject>> call, Throwable t) {
                 progressDialog.dismiss();
-                Toast.makeText(MainActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "You are probably offline or something went wrong...Please try later!", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         list.addItemDecoration(new DividerItemDecoration(this,
                 DividerItemDecoration.VERTICAL));
         list.setAdapter(adapter);
+
     }
 
 }

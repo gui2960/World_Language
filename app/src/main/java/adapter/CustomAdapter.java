@@ -89,7 +89,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
                 for (JsonObject jo : jsonObjectsFull) {
                     if (jo.getResource().getModule_id().toLowerCase().contains(filterPattern) ||
-                            jo.getResource().getLanguage_id().toLowerCase().contains(filterPattern)) {
+                            jo.getResource().getLanguage_id().toLowerCase().contains(filterPattern) ||
+                            jo.getResource().getValue().toLowerCase().contains(filterPattern)) {
                         filteredList.add(jo);
                     }
                 }
