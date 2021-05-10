@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">World Language</string>
+    <string name="resource_id">Resource: </string>
+    <string name="update_at">Updated: </string>
+    <string name="value">Value: </string>
+
+</resources>
