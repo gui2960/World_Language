@@ -2,7 +2,7 @@
 
 Desafio do Sr. Milo!
 
-Solução do desafio realizado em Java e utilizando Retrofit.
+Solução do desafio realizada em Java e utilizando Retrofit.
 
 Aplicação que exiba uma lista dos recursos de tradução (i18n) já disponíveis em url.
 
